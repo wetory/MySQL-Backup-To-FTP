@@ -1,0 +1,9 @@
+# Disable access to important files
+<Files config.ini>
+order allow,deny
+deny from all
+</Files>  
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
