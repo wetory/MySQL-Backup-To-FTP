@@ -90,9 +90,9 @@ function backup_db($host, $user, $pass, $db, $tables = "*") {
  * @param string $ftp_folder Path to folder on FTP server
  * @param File $source Source file
  * @param File $destination Destination file
- * @param number $backup_retention Retention policy for stored backups - by default 3 days
+ * @param number $backup_retention Retention policy for stored backups - by default 7 days
  */
-function uploadToFtp($ftp_uri, $source, $destination, $backup_retention = 3) {
+function uploadToFtp($ftp_uri, $source, $destination, $backup_retention = 7) {
     
     // Split FTP URI into:
     // $match[0] = ftp://username:password@sld.domain.tld/path1/path2/
